@@ -1,14 +1,13 @@
-import Header from "./componets/Header";
-import Footer from "./componets/Footer";
-function App() {
+let CompA = () => {
+  let eid = 101;
+  let ename = "Rahul";
   return (
     <div>
-      <h1>App Component</h1>
-      <hr />
-      <Header />
-      <Footer />
+      <h2>Component A</h2>
+      <h4>Employee Id:{eid}</h4>
+      <h4>Employee Name:{ename}</h4>
+      <h4>{2 * 3}</h4>
     </div>
   );
-}
-
-export default App;
+};
+export default CompA;
