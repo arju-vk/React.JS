@@ -1,13 +1,14 @@
-let CompA = () => {
-  let eid = 101;
-  let ename = "Rahul";
+import React from "react";
+
+const CompB = (props) => {
+  let { greet, emp_Id } = props; //Object Destructuring
   return (
     <div>
-      <h2>Component A</h2>
-      <h4>Employee Id:{eid}</h4>
-      <h4>Employee Name:{ename}</h4>
-      <h4>{2 * 3}</h4>
+      <h3>Component B</h3>
+      <h3>{JSON.stringify(props)}</h3>
+      <h4>{greet()}</h4>
+      <h4>{emp_Id}</h4>
     </div>
   );
 };
-export default CompA;
+export default CompB;
